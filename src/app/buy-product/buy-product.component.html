@@ -1,0 +1,117 @@
+<div > 
+      
+    <h2 class="registration-title" style="text-align: center; padding-top: 100px; font-size: 35px; font-weight: 600; font-family: 'Times New Roman', Times, serif; color: rgb(49, 40, 40);">Buy Product</h2>
+    <div class="divider2"  >
+      <i class="fa-solid fa-leaf" style="color: #e69100; font-size: 22px; "></i>
+    </div> 
+
+
+<div class="container mt-8" style="height: 800px;">
+
+    <div class="card p-3">
+        <div class="row">
+            <!--on left side:   we will be designing form to take details -fullname,contactno,alternatenum-->
+            <div class="col-6">
+
+                <form #orderForm="ngForm" (ngSubmit)="createTransactionAndPlaceOrder(orderForm)">
+
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Full Name</mat-label>
+                        <input matInput placeholder="Full Name" [(ngModel)]="orderDetails.fullName" name="fullName" required>
+                    </mat-form-field>
+
+
+                    
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Full Address</mat-label>
+                        <input matInput placeholder="Full Address" [(ngModel)]="orderDetails.fullAddress" name="fullAddress" required>
+                    </mat-form-field>
+
+
+                    
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Contact Number</mat-label>
+                        <input matInput type="tel" pattern="[6-9][0-9]{9}" minlength="10"  placeholder="Contact Number" [(ngModel)]="orderDetails.contactNumber" name="contactNumber" required>
+                    </mat-form-field>
+
+                    
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Alternate contact number</mat-label>
+                        <input matInput type="tel" pattern="[6-9][0-9]{9}" minlength="10" placeholder="Alternate Contact Number" [(ngModel)]="orderDetails.alternateContactNumber" name="alternateContactNumber">
+                    </mat-form-field>
+                      
+
+                    <div class="col-6">
+
+                        <table class="table">   <!--bootstrap class table-->
+        
+                            <thead class="thead">
+                                <tr>
+                                   <th>Name</th>
+                                   <th>Amount</th>
+                                   <th>Quantity</th>
+                                   <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tbody">
+                                <tr *ngFor="let product of productDetails">
+                                    <td>{{product.productName}}</td>
+                                    <td>{{product.productDiscountedPrice}}</td>
+                                    <td>
+                                        <select 
+                                        #quantity
+                                        class="form-select"
+                                        [ngModel]="getQuantityForProduct(product.productId)"
+                                        (change)="onQuantityChanged(quantity.value,product.productId)"
+                                        >
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </td>
+        
+                                    <td>
+                                        {{getCalculatedTotal(product.productId, product.productDiscountedPrice)}}
+                                    </td>
+                                  
+                                </tr>
+        
+                                <tr>
+        
+                                    <td></td>
+                                    <td></td>
+                                    <td style="font-family: 'Times New Roman', Times, serif; font-weight: 600;font-size: 20px;"><b>Total</b></td>
+                                    <td>{{getCalculatedGrandTotal()}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+
+                    <!-- <div align="right">
+                        <button type="submit" style="background-color: #603303; color: rgb(255, 255, 255);" mat-stroked-button color="primary" [disabled]="!orderForm.valid" >Place Order</button>
+                    </div> -->
+
+                    <div align="right">
+                        <button type="submit" class="custom-button" [disabled]="!orderForm.valid">Place Order</button>
+                      </div>
+                      
+                    
+                </form>
+            </div>
+
+
+
+
+
+
+
+
+
+            <!-- right side:   Generating bill-->
+            
+        </div>
+    </div>
+</div>

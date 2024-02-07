@@ -1,0 +1,71 @@
+mat-button-toggle:hover{
+    background-color:  #210e02eb;
+    color: #fff;
+}
+/* styles.css */
+
+.mat-button-toggle {
+    padding: 8px; /* Adjust padding as needed */
+    font-size: 17px; /* Adjust font size as needed */
+    width: 30%; /* Adjust width as needed */
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600
+}
+
+.mat-button-toggle-group {
+    margin-left: 30%;
+    width: 30%;
+    margin-top: 15%;
+}
+
+.mat-elevation-z8  th{
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600    ;
+
+}
+.mat-elevation-z8 td{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+.mat-row:nth-child(even) {
+    background-color: #f2f2f2; /* Set background color for even rows */
+}
+
+.mat-row:nth-child(odd) {
+    background-color: #ffffff; /* Set background color for odd rows */
+}
+
+
+
+
+
+  
+
+
+.divider2 {
+    font-size: 30px; /* Adjust the font size to a smaller value */
+    display: flex;
+    align-items: center;
+    margin-left: 630px;
+    margin-right: 630px;
+    /* margin-bottom: 40px; */
+    /* margin-top: 10px; */
+    height: 60px;
+  }
+  
+  .divider2::before,
+  .divider2::after {
+    flex: 0.5; /* Adjust the flex value to reduce the length */
+    content: '';
+    padding: 0.5px;
+    margin: 30px; /* Adjust the margin to reduce spacing */
+    height: 1.7px;
+    background-color: rgb(255, 111, 0);
+    
+  }

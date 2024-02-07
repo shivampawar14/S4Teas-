@@ -1,0 +1,76 @@
+/* registration.component.css */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%); */
+}
+
+.col-lg-6 {
+  padding: 20px;
+  margin-left: 30px;
+}
+
+.imgBG {
+  background-size: cover;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.registration-title {
+  color: #F64C32;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.registration-form {
+  max-width: 400px;
+  margin: auto;
+}
+
+.btnStyle {
+  background-image: linear-gradient(135deg, #ff8800 10%, #fd79056d 100%);
+  border-radius: 30px;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btnStyle:hover {
+  /* box-shadow: 0px 2px 15px 0px #464c44; */
+  color: rgb(54, 36, 14);
+}
+.divider2 {
+  font-size: 30px; /* Adjust the font size to a smaller value */
+  display: flex;
+  align-items: center;
+  margin-left: 630px;
+  margin-right: 630px;
+  /* margin-bottom: 40px; */
+  /* margin-top: 10px; */
+  height: 100px;
+}
+
+.divider2::before,
+.divider2::after {
+  flex: 0.5; /* Adjust the flex value to reduce the length */
+  content: '';
+  padding: 0.5px;
+  margin: 30px; /* Adjust the margin to reduce spacing */
+  height: 1.7px;
+  background-color: rgb(255, 111, 0);
+  
+}

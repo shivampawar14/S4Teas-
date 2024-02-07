@@ -1,0 +1,102 @@
+mat-grid-tile{
+    border: 1px solid rgb(65, 35, 13);
+}
+
+.btn-remove-image
+{
+    position: absolute;
+    cursor: pointer;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: auto;
+    text-align: center;
+}
+
+.dropzone
+{
+    height: 150px;
+    min-width: 100px;
+    display: table;
+    background-color: aliceblue;
+    width: 300px;
+    border: dashed 1px #aaa;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-wrapper
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+.centered
+{
+    text-align: center;
+}
+
+.browse-button
+{
+    color: blue;
+    cursor: pointer;
+}
+
+
+
+.divider2 {
+    font-size: 30px; /* Adjust the font size to a smaller value */
+    display: flex;
+    align-items: center;
+    margin-left: 630px;
+    margin-right: 630px;
+    /* margin-bottom: 40px; */
+    /* margin-top: 10px; */
+    height: 60px;
+  }
+  
+  .divider2::before,
+  .divider2::after {
+    flex: 0.5; /* Adjust the flex value to reduce the length */
+    content: '';
+    padding: 0.5px;
+    margin: 30px; /* Adjust the margin to reduce spacing */
+    height: 1.7px;
+    background-color: rgb(255, 111, 0);
+    
+  }
+
+
+  .text-center button{
+    display: inline-block;
+    padding: 3px 16px;
+    text-align: center;
+    text-decoration: solid;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:600;
+    height: 35px;
+    width: 200px;
+    margin-right: 50px;
+    background-color: rgb(245, 210, 115);
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    justify-content: center;
+ 
+  }
+  .text-center button:hover {
+    background-color: #452106; /* Change background color on hover */
+    color: white;
+  }
+
+
+  .w-100  {
+    width: 400px;
+  }

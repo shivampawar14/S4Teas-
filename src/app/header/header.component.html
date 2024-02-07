@@ -1,0 +1,94 @@
+<div >
+  <h4 class="account">
+    <i class="material-icons user-icon" style="padding-top: 15px;"></i> 
+    <button *ngIf="! isLoggedIn()" type="button" class="btn btn-light" routerLink="/login" style="margin-left: 1350px ;margin-top: 10px; height: 30px;width: 80px; ">Login</button>
+        <button *ngIf="isLoggedIn()" type="button" class="btn btn-danger" (click)="logout()" style="margin-left: 1350px; margin-top: 10px;height: 30px;width: 80px;" >Logout</button>
+</h4>
+
+</div>
+
+
+
+      
+      <nav class="navbar" >
+        <div class="logo">
+          <a routerLink="/">
+          <img src="assets/s4Teas.png" alt="Logo" >
+        </a>
+        </div>
+       
+
+        <div style="margin-left: 50px; ">
+        <ul class="nav-links" >
+      
+          <li><a routerLink="/" >Home</a></li>
+          <li><a routerLink="/aboutus">About Us</a></li>
+          <li class="dropdown">
+            <a routerLink="/ourtea">Our Tea </a> &nbsp;<i class="arrow down" ></i>
+           
+             <div class="dropdown-content">
+            
+              <div class="lmn">
+                <a href="/ourtea" style="margin-left: 40px; color: red;  font-family: 15px; font-weight: 600; font-family: 'Times New Roman', Times, serif;"> Black Tea</a>  <br><br>
+              
+                <a href="#"style="margin-left: 30px;; font-size:15px  ">Cllone Tip</a><br>
+                <a href="#"style="margin-left: 30px;;font-size:15px  ">Early Tea</a><br>
+                <a href="#"style="margin-left: 30px;font-size:15px  ">HandMade Black Tea</a><br>
+                <a href="#"style="margin-left: 30px;;font-size:15px  ">Vintage Black Tea</a><br>
+    
+              </div>
+    
+              <div class="lmn">
+                <a href="/ourtea" style="margin-left: 40px;color: red;  font-family: 15px; font-weight: 600; font-family: 'Times New Roman', Times, serif;"> White tea</a>  <br><br>
+              
+                <a href="#"style="margin-left: 30px;;font-size:15px  ">
+                  Handmade White Tea</a><br>
+                <a href="#"style="margin-left: 30px;;font-size:15px  ">Niligiri White tea</a><br>
+               
+              </div>
+    
+              <div class="lmn">
+                <a href="/ourtea" style="margin-left: 40px;color: red;  font-family: 15px; font-weight: 600; font-family: 'Times New Roman', Times, serif;"> Green Tea</a>  <br><br>
+              
+                <a href="#"style="margin-left: 30px;;font-size:15px  ">Handmade green Tea </a><br>
+                <a href="#"style="margin-left: 30px;;font-size:15px  ">Rose Green Tea</a><br>
+                <a href="#"style="margin-left: 30px;font-size:15px  "> Virgin Green Tea</a><br>
+                
+              </div>
+              
+    
+    
+    
+    <div class="sqr">
+      <a href="/ourtea" style="margin-left: 200px; color: red; font-family: 15px; font-weight: 600; font-family: 'Times New Roman', Times, serif;"> Herbal Infusion</a>  <br>
+      <a href="#"style="margin-left: 200px;font-size:15px  ">Chamomile </a><br>
+      <a href="#"style="margin-left: 200px;font-size:15px  ">Lemongrass</a><br>
+      <a href="#"style="margin-left: 200px;font-size:15px  ">Peppermint</a><br>
+      
+    </div>
+          </div>
+          </li>
+          <li>
+            <a routerLink="/contactus">Contact Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a routerLink="/register">Register</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- <a  routerLink="/app-allproducts"  routerLinkActive="active-link" >All Products</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+           
+            <div *ngIf="isLoggedIn()"  style="margin-right: 40px;">
+              <a  *ngIf="!isAdmin()" routerLink="/allproducts"  routerLinkActive="active-link" style="margin-right: 40px;">All Products</a>
+              <a  *ngIf="!isAdmin()" routerLink="/cart"  routerLinkActive="active-link"  style="margin-right: 40px;">Cart</a>
+              <a  *ngIf="!isAdmin()" routerLink="/myOrders"  routerLinkActive="active-link" style="margin-right: 40px;">My Orders</a>
+              <a  *ngIf="isAdmin()" routerLink="/addNewProduct" routerLinkActive="active-link" style="margin-right: 40px;">Add Product</a>
+              <a *ngIf="isAdmin()" routerLink="/showProductDetails" routerLinkActive="active-link" style="margin-right: 40px;">Product Details</a>
+              <a  *ngIf="isAdmin()" routerLink="/orderInformation" routerLinkActive="active-link" style="margin-right: 40px;"> All Orders</a>
+              <a  *ngIf="isAdmin()" routerLink="/allUsers" routerLinkActive="active-link" style="margin-right: 40px;"> All Users</a>
+              
+          
+              
+            </div>
+          
+          
+        </ul>
+      
+      </div>
+    </nav>
+    

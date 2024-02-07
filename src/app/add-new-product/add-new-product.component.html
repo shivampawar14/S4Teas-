@@ -1,0 +1,109 @@
+<div > 
+      
+    <h2 class="registration-title" style="text-align: center; padding-top: 100px; font-size: 35px; font-weight: 600; font-family: 'Times New Roman', Times, serif; color: rgb(49, 40, 40);">Add New Products</h2>
+    <div class="divider2"  >
+      <i class="fa-solid fa-leaf" style="color: #e69100; font-size: 22px; "></i>
+    </div> 
+
+
+<div class="container mt-5" style="margin-top: 50px; height: 700px;">
+    <div class="card p-2">
+
+        <div class="row">
+            <div class="col-5" style="margin-left: 300px;  float: left; ">
+
+                <form #productForm="ngForm" (ngSubmit)="addProduct(productForm)" style="border: 2 dotted;">
+
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Product Name</mat-label>
+                        <input matInput 
+                        placeholder="Product Name"
+                        [(ngModel)]="product.productName"
+                        name="productName">
+                    </mat-form-field><br>
+
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Product Description</mat-label>
+                        <input matInput 
+                        placeholder="Product Description"
+                        [(ngModel)]="product.productDescription"
+                        name="productDescription">
+                    </mat-form-field><br>
+
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Product Actual Price</mat-label>
+                        <input matInput 
+                        placeholder="Product Actual Price"
+                        [(ngModel)]="product.productActualPrice"
+                        name="productActualPrice">
+                    </mat-form-field><br>
+
+                    <mat-form-field appearance="outline" class="w-100">
+                        <mat-label>Product Discount Price</mat-label>
+                        <input matInput 
+                        placeholder="Product Discount Price"
+                        [(ngModel)]="product.productDiscountedPrice"
+                        name="productDiscountedPrice">
+                    </mat-form-field><br>
+
+                    <div class="text-center" style="margin-top: 30px;  ">
+                        <button mat-stroked-button color="primary" >Clear</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button type="submit" mat-stroked-button color="primary"  *ngIf="isNewProduct">Add Product</button>
+                        <button type="submit" mat-stroked-button color="primary"  *ngIf="!isNewProduct">Update Product</button>
+                    </div>
+
+                    <!-- style="margin-right: 3px;  background-color: #f1a64b; color: rgb(78, 53, 12);" -->
+
+
+                </form>
+                
+
+            </div>
+
+            <div class="col-7" >
+                <div >
+
+                    <div class="dropzone"
+                    appDrag style="height: 300px; width: 30%; margin-right: 250px; ">
+                        <div class="text-wrapper">
+                            <div class="centered">
+                                
+                                <a (click)="selectFile.click()" class="browse-button">Browse</a> 
+                                a file
+                            </div>
+                            
+                        </div>
+                    </div>
+
+
+
+                    <input type="file" 
+                    style="display: none;"
+                    multiple value="select" 
+                    #selectFile
+                    (change)="onFileSelected($event)">
+                </div>
+
+                <div class="mt-5">
+                    <div class="row">
+                        <mat-grid-list cols="4" rowHeight="1:1">
+                            <mat-grid-tile *ngFor="let file of product.productImages; let i = index;">
+                                <div style="position: relative">
+                                    <span class="btn-remove-image" (click)="removeImages(i)">x</span>
+                                    <img [src]="file.url" width="100px" height="100px">
+
+                                </div>
+
+                            </mat-grid-tile>
+
+                        </mat-grid-list>
+                    </div>
+
+                </div>
+               
+            </div>
+        </div>
+
+        
+    </div>
+</div>

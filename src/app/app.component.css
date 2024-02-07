@@ -1,0 +1,40 @@
+/* Style the navbar */
+
+ 
+  
+  
+  
+
+  .footer a
+  {
+    text-decoration: none;
+    color:aliceblue;
+  }
+  .xyz label
+  {
+    margin-bottom: -40px;
+  }
+  .abcd p{
+    margin-left: -1px;
+  }
+  .abcd{
+    padding-top: 70px;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown ul {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff; /* Set your dropdown background color */
+    padding: 10px;
+    display: none;
+  }
+  
+  .dropdown:hover ul {
+    display: block;
+  }

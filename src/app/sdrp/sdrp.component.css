@@ -1,0 +1,55 @@
+.about h2 {
+    position: absolute;
+   
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(49, 40, 40);
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 660px;
+
+  }
+  
+
+
+  
+.divider2 {
+    font-size: 30px; /* Adjust the font size to a smaller value */
+    display: flex;
+    align-items: center;
+    margin-left: 620px;
+    margin-right: 620px;
+    /* margin-bottom: 40px; */
+    margin-top: 50px;
+  }
+  
+  .divider2::before,
+  .divider2::after {
+    flex: 0.5; /* Adjust the flex value to reduce the length */
+    content: '';
+    padding: 0.5px;
+    margin: 30px; /* Adjust the margin to reduce spacing */
+    height: 1.7px;
+    background-color: rgb(255, 111, 0);
+    
+  }
+  
+  .divider3 {
+    font-size: 30px; /* Adjust the font size to a smaller value */
+    display: flex;
+    align-items: center;
+    margin-left: 620px;
+    margin-right: 620px;
+    /* margin-bottom: 40px; */
+    margin-top: 30px;
+  }
+  
+  .divider3::before,
+  .divider3::after {
+    flex: 0.5; /* Adjust the flex value to reduce the length */
+    content: '';
+    padding: 0.5px;
+    margin: 30px; /* Adjust the margin to reduce spacing */
+    height: 1.7px;
+    background-color: rgb(255, 111, 0);
+    
+  }

@@ -1,0 +1,385 @@
+.abc
+{
+    /* background-color:#D3DCE5; */
+     height: 600px;
+      width: 50%;
+       float: left;
+}
+h1 {
+  margin-left: 180px;
+  margin-top: 110px;
+  font: bold;
+  font-style: oblique;
+  font-family: Georgia, 'Times New Roman', Times, serif; /* Replace 'Your Desired Font' with the actual font name */
+  font-size: 35px; /* Set the desired font size */
+}
+
+p {
+  line-height: 1.5;
+  margin-left: 180px;
+  margin-top: 50px;
+  text-align: left;
+  
+  font-size: 17px; /* Set the desired font size */
+  font-family: 'Times New Roman', Times, serif; /* Replace 'Your Desired Font' with the actual font name */
+}
+.abc1
+{
+     height: 363px;
+      width: 500px;
+       float: left;
+}
+ img
+{
+    height: 500px;
+    
+
+}
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* .abc2 img {
+
+  max-height: 100%;
+  max-width: 600%; 
+  float: calc();
+  border: 1px solid #ddd; 
+  border-radius: 8px;
+} */
+
+/* .horizontal-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200vh; /* Adjust the height as needed */
+/* } */
+
+/* .horizontal-image-container img {
+  max-width: 300%;
+  
+  height: auto;
+}  */
+
+/* .horizontal-image-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.horizontal-image-container img {
+  max-width: 100%;
+  height: auto;
+} */
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: rgb(250, 250, 250);
+}
+
+
+
+
+
+/* Top right text */
+.top-right {
+  margin-top: 550px;
+  margin-right: 20px;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 8px;
+  right: 1px;
+
+}
+.about-us-title {
+
+  font-size: 35px;
+  font-weight: 500;
+  border-bottom: 2px solid rgb(244, 155, 30); /* Set your desired color and thickness */
+  padding-bottom: 2px; /* Adjust the space between text and underline */
+}
+
+.transparent-box {
+  background-color: rgba(8, 8, 8, 0.407); /* Adjust the alpha value for transparency */
+  padding: 5px; /* Add padding as needed */
+  border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+
+
+.additional-content {
+  padding: 40px;
+  justify-content: center;
+}
+
+.additional-content h2 {
+  font-size: 35px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  color: rgb(50, 38, 38);
+  margin-top: 40px;
+  margin-bottom: 10px;
+  justify-content: center;
+  animation: slideInFromBottom 1.5s ease-in-out;
+}
+@keyframes slideInFromBottom {
+  from {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.additional-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+
+}
+
+
+div.gallery {
+  border: 1px solid #ccc;
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(105, 34, 11);
+  font-weight: 600;
+  height: 450px;
+  
+}
+
+div.gallery:hover {
+  border: 3px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+.desc a:hover
+{
+  color: coral;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fts {
+  padding: 40px;
+  justify-content: center;
+}
+.fts h2 {
+  font-size: 45px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  color: rgb(50, 38, 38);
+  margin-top: 40px;
+  margin-bottom: -15px;
+  justify-content: center;
+}
+
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.abc img { 
+  height: 300px;
+  /* width: 100%; */
+  margin-left: 150px;
+ }
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+
+  height: 30%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  border: 10px solid #f1f1f1;
+  position: sticky; 
+  /* position: fixed; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.teablog p{
+  height: 100px;
+  margin-top: -40px;
+  margin-left: 500px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  color: rgb(50, 38, 38);
+  /* margin-top: 50px; */
+  animation: fadeIn 5s ease-in-out ;
+  
+  
+  
+}
+
+.containerournewp {
+  position: relative;
+  max-width: 500px; /* Maximum width */
+ margin-left: 500px;
+margin-top: 100px;
+
+}
+
+/* .divider {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.divider::before, .divider::after {
+  flex: 1;
+  content: '';
+  padding: 1px;
+  background-color: rgb(255, 111, 0);
+  margin: 5px;
+} */
+
+.divider {
+  font-size: 30px;
+  display: flex ;
+  align-items: center;
+  margin-left: 160px;
+  margin-right: 400px;
+}
+
+.divider::before,
+.divider::after {
+  flex: 1;
+  content: '';
+  margin: 20px;
+ 
+}
+
+
+.divider::before,
+.divider::after {
+  height: 1.7px; /* Adjust the height to control the thickness of the line */
+
+  background-color: rgb(255, 111, 0);
+}
+
+
+.divider1 {
+  font-size: 30px; /* Adjust the font size to a smaller value */
+  display: flex;
+  align-items: center;
+  margin-left: 610px;
+  margin-right: 610px;
+  margin-bottom: 40px;
+}
+
+.divider1::before,
+.divider1::after {
+  flex: 0.5; /* Adjust the flex value to reduce the length */
+  content: '';
+  padding: 0.5px;
+  margin: 30px; /* Adjust the margin to reduce spacing */
+  height: 1.7px;
+  background-color: rgb(255, 111, 0);
+  
+}
+
+
+
+.divider2 {
+  font-size: 30px; /* Adjust the font size to a smaller value */
+  display: flex;
+  align-items: center;
+  margin-left: 620px;
+  margin-right: 620px;
+  /* margin-bottom: 40px; */
+}
+
+.divider2::before,
+.divider2::after {
+  flex: 0.5; /* Adjust the flex value to reduce the length */
+  content: '';
+  padding: 0.5px;
+  margin: 30px; /* Adjust the margin to reduce spacing */
+  height: 1.7px;
+  background-color: rgb(255, 111, 0);
+  
+}
